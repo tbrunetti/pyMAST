@@ -2,7 +2,7 @@
 
 **Pure Python implementation of the MAST R/Bioconductor package for single-cell differential expression analysis.**
 
-[![CI](https://github.com/<user>/pyMAST/actions/workflows/ci.yml/badge.svg)](https://github.com/<user>/pyMAST/actions)
+[![CI](https://github.com/tbrunetti/pyMAST/actions/workflows/ci.yml/badge.svg)](https://github.com/tbrunetti/pyMAST/actions)
 [![Python](https://img.shields.io/badge/python-3.14%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -37,22 +37,22 @@ exclusively using `scipy`, `numpy`, `statsmodels`, and `patsy`. Zero R dependenc
 ### From GitHub (recommended for UV environments)
 
 ```bash
-uv add git+https://github.com/<user>/pyMAST.git
+uv add git+https://github.com/tbrunetti/pyMAST.git
 
 # Pinned version:
-uv add "pymast @ git+https://github.com/<user>/pyMAST.git@v0.1.0"
+uv add "pymast @ git+https://github.com/tbrunetti/pyMAST.git@v0.1.0"
 ```
 
 ### With pip
 
 ```bash
-pip install git+https://github.com/<user>/pyMAST.git
+pip install git+https://github.com/tbrunetti/pyMAST.git
 ```
 
 ### For development
 
 ```bash
-git clone https://github.com/<user>/pyMAST.git
+git clone https://github.com/tbrunetti/pyMAST.git
 cd pyMAST
 uv pip install -e ".[dev]"
 ```
