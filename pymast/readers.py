@@ -147,6 +147,10 @@ def from_flat_df(
 
     var_df = pd.DataFrame(index=pd.Index(var_cols, name="gene"))
 
+    # Ensure obs index is string-typed — AnnData requires string indices.
+    # Without this, an integer RangeIndex triggers ImplicitModificationWarning.
+    obs_df.index = obs_df.index.astype(str)
+
     adata = AnnData(X=expr_arr.astype(np.float32), obs=obs_df, var=var_df)
     return adata
 

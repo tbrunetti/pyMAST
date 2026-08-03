@@ -132,7 +132,7 @@ def gsea_after_boot(
     boot_result: BootZlmResult,
     gene_sets: dict[str, list[str]],
     *,
-    adjust_method: str = "BH",
+    adjust_method: str = "fdr_bh",
     min_genes: int = 5,
     verbose: bool = True,
 ) -> pd.DataFrame:
