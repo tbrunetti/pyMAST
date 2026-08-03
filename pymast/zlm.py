@@ -246,6 +246,11 @@ def zlm(
     """
     validate_anndata(adata)
 
+    # ---- Validate method first (before formula parsing) ----
+    # R: zeroinf.R — methodDict dispatch
+    fitter = ZlmFitter(method=method)
+    discrete_fitter = fitter.discrete_fitter
+
     # Compute CDR if not present
     if cdr_key not in adata.obs.columns:
         compute_cdr(adata, layer=layer, key_added=cdr_key, inplace=True)
@@ -261,13 +266,15 @@ def zlm(
     gene_names = list(adata_use.var_names)
     n_genes = len(gene_names)
 
-    # ---- Build design matrices via patsy ----
+    # ---- Build design matrix via patsy ----
     # R: zeroinf.R — model.matrix(formula, data=colData(sca))
+    # Use patsy.dmatrix (not dmatrices) because formula is one-sided (~ x),
+    # not two-sided (y ~ x). dmatrix correctly handles right-hand-side-only formulas.
     obs_data = adata_use.obs.copy()
 
     try:
-        # Full model
-        _, X_full_df = patsy.dmatrices(formula + " - 1", data=obs_data, return_type="dataframe")
+        # Full model — patsy.dmatrix handles '~ group + cdr' directly
+        X_full_df = patsy.dmatrix(formula, data=obs_data, return_type="dataframe")
     except patsy.PatsyError as e:
         raise ValueError(
             f"Formula '{formula}' could not be parsed against adata.obs columns. "
@@ -277,10 +284,11 @@ def zlm(
     coef_names_full = list(X_full_df.columns)
     X_full = X_full_df.values
 
-    # Add intercept explicitly (patsy dmatrices with -1 removes it; re-add)
-    if "Intercept" not in coef_names_full:
-        X_full = np.column_stack([np.ones(X_full.shape[0]), X_full])
-        coef_names_full = ["Intercept"] + coef_names_full
+    # patsy.dmatrix includes an Intercept column by default (named 'Intercept')
+    # Rename to match our convention if needed
+    coef_names_full = [
+        c if c != "Intercept" else "Intercept" for c in coef_names_full
+    ]
 
     n_params = X_full.shape[1]
 
@@ -299,9 +307,8 @@ def zlm(
     X_null = X_full[:, null_col_mask]
     null_coef_names = [c for c, keep in zip(coef_names_full, null_col_mask) if keep]
 
-    # ---- ZlmFitter ----
-    fitter = ZlmFitter(method=method)
-    discrete_fitter = fitter.discrete_fitter
+    # ---- ZlmFitter already instantiated above ----
+    # (moved before formula parsing so invalid method raises correct error)
 
     # ---- Gene-wise fitting ----
     # R: zeroinf.R — mapply(.zlm, ...)

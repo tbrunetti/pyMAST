@@ -239,7 +239,7 @@ def rank_genes_groups(
         finite_mask = np.isfinite(p_raw) & (p_raw > 0)
         p_adj = p_raw.copy()
         if finite_mask.sum() > 1:
-            _, p_adj_finite, _, _ = multipletests(p_raw[finite_mask], method="BH")
+            _, p_adj_finite, _, _ = multipletests(p_raw[finite_mask], method="fdr_bh")
             p_adj[finite_mask] = p_adj_finite
         for j in range(n_genes):
             pvals_adj_arr[group_str][j] = float(p_adj[j])

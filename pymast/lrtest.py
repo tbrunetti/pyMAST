@@ -228,7 +228,7 @@ def lrtest(
     group: np.ndarray,
     *,
     gene_names: list[str] | None = None,
-    adjust_method: str = "BH",
+    adjust_method: str = "fdr_bh",
 ) -> pd.DataFrame:
     """Run the MAST two-group hurdle likelihood ratio test.
 
@@ -250,8 +250,9 @@ def lrtest(
     gene_names : list[str] or None
         Names for the genes (rows of result). Uses integer indices if None.
     adjust_method : str
-        Multiple testing correction method. ``"BH"`` (Benjamini-Hochberg) is
-        the R MAST default. Passed to ``statsmodels.stats.multitest``.
+        Multiple testing correction method. ``"fdr_bh"`` (Benjamini-Hochberg)
+        is the statsmodels equivalent of R's ``"BH"``. Passed to
+        ``statsmodels.stats.multitest.multipletests``.
 
     Returns
     -------

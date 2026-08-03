@@ -113,7 +113,7 @@ class ZlmFit:
         self,
         contrast: str | np.ndarray,
         *,
-        adjust_method: str = "BH",
+        adjust_method: str = "fdr_bh",
     ) -> pd.DataFrame:
         """Run a likelihood ratio test on this ZlmFit.
 
@@ -205,7 +205,7 @@ class ZlmFit:
         self,
         contrast: np.ndarray,
         *,
-        adjust_method: str = "BH",
+        adjust_method: str = "fdr_bh",
     ) -> pd.DataFrame:
         """Run a Wald test on this ZlmFit for a given contrast.
 
