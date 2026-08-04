@@ -133,8 +133,15 @@ def rank_genes_groups(
     else:
         test_groups = [str(g) for g in groups]
 
-    # Restrict to HVGs if requested
-    adata_test = filter_to_highly_variable(adata) if use_highly_variable else adata
+    # Restrict to HVGs if requested.
+    # Always materialise as a copy so that writing to adata_test.obs never
+    # triggers AnnData's ImplicitModificationWarning (which fires when you
+    # assign to a column of a *view* rather than a real AnnData object).
+    adata_test = (
+        filter_to_highly_variable(adata).copy()
+        if use_highly_variable
+        else adata.copy()
+    )
     gene_names = list(adata_test.var_names)
     n_genes = len(gene_names)
 
