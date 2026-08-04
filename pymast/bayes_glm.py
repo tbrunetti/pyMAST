@@ -27,7 +27,6 @@ from dataclasses import dataclass
 import numpy as np
 from scipy.special import expit  # sigmoid / logistic function
 
-
 # ---------------------------------------------------------------------------
 # BayesGLMResult — result container
 # ---------------------------------------------------------------------------

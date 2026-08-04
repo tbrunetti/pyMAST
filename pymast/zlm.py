@@ -38,7 +38,6 @@ from .lm_wrapper import OLSLike
 from .utils import compute_cdr
 from .zlm_fit import ZlmFit
 
-
 # ---------------------------------------------------------------------------
 # _fit_one_gene — fit a single gene's hurdle model
 # ---------------------------------------------------------------------------

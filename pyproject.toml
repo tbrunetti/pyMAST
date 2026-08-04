@@ -46,7 +46,7 @@ packages = ["pymast"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py314"
+target-version = "py313"
 
 [tool.ruff.lint]
 # N (naming conventions) omitted — statistical code uses intentional uppercase

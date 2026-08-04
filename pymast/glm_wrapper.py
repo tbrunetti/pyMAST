@@ -24,7 +24,6 @@ from dataclasses import dataclass
 import numpy as np
 import statsmodels.api as sm
 
-
 # ---------------------------------------------------------------------------
 # GLMResult — mirrors BayesGLMResult interface
 # ---------------------------------------------------------------------------

@@ -26,7 +26,6 @@ from statsmodels.stats.multitest import multipletests
 from .lm_wrapper import wald_test
 from .log_fc import get_log_fc
 
-
 # ---------------------------------------------------------------------------
 # ZlmFit — result container
 # R: ZlmFit.R — ZlmFit S4 class

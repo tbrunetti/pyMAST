@@ -18,7 +18,6 @@ import re
 
 import numpy as np
 
-
 # ---------------------------------------------------------------------------
 # CoefficientHypothesis
 # R: Hypothesis.R — CoefficientHypothesis S4 class

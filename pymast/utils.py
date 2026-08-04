@@ -16,7 +16,6 @@ from anndata import AnnData
 
 from .anndata_utils import get_expression_matrix
 
-
 # ---------------------------------------------------------------------------
 # Cellular Detection Rate (CDR)
 # R: UtilityFunctions.R — colSums(assay > 0) / nrow(assay)

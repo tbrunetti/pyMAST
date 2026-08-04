@@ -23,7 +23,6 @@ from dataclasses import dataclass
 import numpy as np
 from scipy.stats import chi2
 
-
 # ---------------------------------------------------------------------------
 # LMlike — abstract base class
 # R: LmWrapper.R — LMlike virtual class
