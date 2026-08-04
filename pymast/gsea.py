@@ -26,7 +26,6 @@ from dataclasses import dataclass
 
 import numpy as np
 import pandas as pd
-from scipy.stats import norm
 
 from .bootstrap import BootZlmResult
 
@@ -170,7 +169,6 @@ def gsea_after_boot(
     from statsmodels.stats.multitest import multipletests
 
     gene_names = np.array(boot_result.gene_names)
-    n_genes = len(gene_names)
     n_boot = boot_result.n_boot
 
     # Use the mean log2FC across bootstrap as the observed statistic

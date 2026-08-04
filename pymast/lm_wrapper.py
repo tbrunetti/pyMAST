@@ -21,7 +21,6 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass
 
 import numpy as np
-import pandas as pd
 from scipy.stats import chi2
 
 

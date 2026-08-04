@@ -22,7 +22,7 @@ DOI: 10.1214/08-AOAS161
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 import numpy as np
 from scipy.special import expit  # sigmoid / logistic function

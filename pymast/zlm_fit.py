@@ -16,14 +16,14 @@ Genome Biology 16:278. DOI: 10.1186/s13059-015-0844-5
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 import numpy as np
 import pandas as pd
 from scipy.stats import chi2
 from statsmodels.stats.multitest import multipletests
 
-from .lm_wrapper import ChiSqTable, make_chisq_table, wald_test
+from .lm_wrapper import wald_test
 from .log_fc import get_log_fc
 
 

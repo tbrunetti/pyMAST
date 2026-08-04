@@ -166,7 +166,6 @@ def rank_genes_groups(
         # Build reference mask
         group_labels = adata_test.obs[groupby].astype(str)
         if reference == "rest":
-            test_mask = (group_labels == group_str) | (group_labels != group_str)
             # Create binary group column
             adata_test.obs["_pymast_group"] = (group_labels == group_str).astype(int)
         else:
@@ -182,7 +181,6 @@ def rank_genes_groups(
             adata_sub.obs["_pymast_group"] = (
                 adata_sub.obs[groupby].astype(str) == group_str
             ).astype(int)
-            adata_test_use = adata_sub
             adata_test.obs["_pymast_group"] = (group_labels == group_str).astype(int)
 
         # Build formula

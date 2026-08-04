@@ -47,7 +47,12 @@ packages = ["pymast"]
 [tool.ruff]
 line-length = 100
 target-version = "py314"
-select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.ruff.lint]
+# N (naming conventions) omitted — statistical code uses intentional uppercase
+# names (X, coef_C/D, vcov_C/D, loglik_C/D) following MAST R convention.
+select = ["E", "F", "I", "W", "UP"]
+ignore = ["E501"]  # long lines acceptable in scientific one-liners
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
