@@ -170,3 +170,31 @@ both pins:
 > environment's upper bounds. In the CI job, `uv` will resolve to the newest
 > mutually-compatible `(anndata, pandas)` pair. Locally tested with
 > `anndata>=0.13` + `pandas>=3` without issue.
+
+---
+
+## Complete Fix Summary
+
+The table below covers all changes made across this session, including
+the runtime warning fixes, the CI dependency conflict, and the full
+ruff linting cleanup.
+
+| File(s) | Issue | Fix |
+|---|---|---|
+| `pymast/tl.py` | `ImplicitModificationWarning` — writing to `.obs` of an AnnData **view** | Call `.copy()` on the HVG-filtered result so `adata_test` is always a concrete object |
+| `pymast/zlm_fit.py` | `RuntimeWarning: invalid value in subtract` — `nan - nan` on unfit continuous genes | Wrap subtraction in `np.errstate(invalid="ignore")` + `np.nan_to_num` |
+| `pyproject.toml` | CI dep conflict: `anndata==0.12.16` requires `pandas<3`, conflicting with `pandas>=3.0.3` | Unpin: `anndata>=0.13.0`, `pandas>=2.1` |
+| `pyproject.toml` | `ruff` config deprecation warning; `py314` not recognised by ruff 0.16.x | Move config to `[tool.ruff.lint]`, change `target-version = "py313"` |
+| `pyproject.toml` | 130+ N8xx naming-convention violations on intentional statistical names (`X`, `coef_C/D`, etc.) | Remove `N` from ruff `select`; add `ignore = ["E501"]` |
+| `pymast/bayes_glm.py` | F401 unused import: `dataclasses.field` | Removed |
+| `pymast/bootstrap.py` | F401 unused imports: `pandas`, `.zlm_fit.ZlmFit` | Removed |
+| `pymast/gsea.py` | F401 unused import: `scipy.stats.norm` | Removed |
+| `pymast/lm_wrapper.py` | F401 unused import: `pandas` | Removed |
+| `pymast/zlm.py` | F401 unused imports: `warnings`, `pandas`, `.ebayes.GeneSufficientStats` | Removed |
+| `pymast/zlm_fit.py` | F401 unused imports: `dataclasses.field`, `.lm_wrapper.ChiSqTable/make_chisq_table` | Removed |
+| `pymast/tl.py` | F841 unused variables: `test_mask` (always-True tautology), `adata_test_use` (never read) | Removed both assignments |
+| `pymast/gsea.py` | F841 unused variable: `n_genes` | Removed assignment |
+| `pymast/hypothesis.py` | UP037 quoted return-type annotation `-> "Hypothesis"` | Removed quotes (redundant with `from __future__ import annotations`) |
+| `pymast/__init__.py` | I001 import names not sorted alphabetically within `from X import ...` lines | Sorted alphabetically |
+| All 16 `pymast/*.py` | I001 trailing blank line at end of each file's import block | Removed via `ruff check --fix` |
+| `antigravity_docs/` | No documentation of fixes | Added `bugfix_warnings_and_ci_deps.md` (this file) |
