@@ -28,7 +28,6 @@ import numpy as np
 from scipy.optimize import minimize
 from scipy.special import betaln, digamma
 
-
 # ---------------------------------------------------------------------------
 # Data class for per-gene sufficient statistics
 # ---------------------------------------------------------------------------

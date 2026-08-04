@@ -23,7 +23,6 @@ from anndata import AnnData
 
 from .anndata_utils import get_expression_matrix
 
-
 # ---------------------------------------------------------------------------
 # mast_filter
 # R: filterEval.R — mast_filter() / filterEval()

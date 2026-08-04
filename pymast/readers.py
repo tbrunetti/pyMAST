@@ -25,7 +25,6 @@ from anndata import AnnData
 from .anndata_utils import validate_anndata
 from .utils import compute_cdr, compute_et_from_ct
 
-
 # ---------------------------------------------------------------------------
 # Primary entry point: from_anndata
 # R: Readers.R — SceToSingleCellAssay(), FromMatrix()

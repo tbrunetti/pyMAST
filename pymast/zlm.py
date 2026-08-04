@@ -18,11 +18,9 @@ Genome Biology 16:278. DOI: 10.1186/s13059-015-0844-5
 
 from __future__ import annotations
 
-import warnings
 from typing import Literal
 
 import numpy as np
-import pandas as pd
 import patsy
 from anndata import AnnData
 from joblib import Parallel, delayed
@@ -34,12 +32,11 @@ from .anndata_utils import (
     validate_anndata,
 )
 from .bayes_glm import BayesGLMLike
-from .ebayes import GeneSufficientStats, ebayes, get_ss_g_r_ng
+from .ebayes import ebayes, get_ss_g_r_ng
 from .glm_wrapper import GLMLike
 from .lm_wrapper import OLSLike
 from .utils import compute_cdr
 from .zlm_fit import ZlmFit
-
 
 # ---------------------------------------------------------------------------
 # _fit_one_gene — fit a single gene's hurdle model

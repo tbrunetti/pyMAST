@@ -18,7 +18,6 @@ import pandas as pd
 import scipy.sparse as sp
 from anndata import AnnData
 
-
 # ---------------------------------------------------------------------------
 # Validation helpers
 # ---------------------------------------------------------------------------

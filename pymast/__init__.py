@@ -27,16 +27,16 @@ Or use the low-level ZLM API:
 from __future__ import annotations
 
 from . import tl
-from .bootstrap import boot_zlm, BootZlmResult
-from .ebayes import ebayes, EBayesResult, GeneSufficientStats
+from .bootstrap import BootZlmResult, boot_zlm
+from .ebayes import EBayesResult, GeneSufficientStats, ebayes
 from .filter import burden_of_filtering, mast_filter
-from .gsea import gsea_after_boot, GSEAResult
+from .gsea import GSEAResult, gsea_after_boot
 from .hypothesis import CoefficientHypothesis, Hypothesis
 from .log_fc import get_log_fc
-from .lrtest import LRT, lrt, lrtest, log_prod
+from .lrtest import LRT, log_prod, lrt, lrtest
 from .readers import from_anndata, from_flat_df, from_matrix
 from .utils import compute_cdr, compute_et_from_ct, freq, threshold_scRNA
-from .zlm import zlm, ZlmFitter
+from .zlm import ZlmFitter, zlm
 from .zlm_fit import ZlmFit
 
 __version__ = "0.1.0"

@@ -1,0 +1,309 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/tonya/Downloads/github/pyMAST/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+1. Hurdle Model (`zeroinf.R`, `LmWrapper.R`) — AnnData Input	antigravity_docs/implementation_plan_v2_final.md	/^### 1. Hurdle Model (`zeroinf.R`, `LmWrapper.R`) — AnnData Input$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Core Mathematics — Verified Against R Source
+2. Empirical Bayes Variance Shrinkage (`ebayes-helpers.R`)	antigravity_docs/implementation_plan_v2_final.md	/^### 2. Empirical Bayes Variance Shrinkage (`ebayes-helpers.R`)$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Core Mathematics — Verified Against R Source
+3. LRT - Simple Two-Group Test (`lrtest.R`, lines 5-50)	antigravity_docs/implementation_plan_v2_final.md	/^### 3. LRT - Simple Two-Group Test (`lrtest.R`, lines 5-50)$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Core Mathematics — Verified Against R Source
+4. LRT - Full Model (`ZlmFit.R`, `LmWrapper.R`)	antigravity_docs/implementation_plan_v2_final.md	/^### 4. LRT - Full Model (`ZlmFit.R`, `LmWrapper.R`)$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Core Mathematics — Verified Against R Source
+5. Wald Test (`LmWrapper.R`, lines 142-167)	antigravity_docs/implementation_plan_v2_final.md	/^### 5. Wald Test (`LmWrapper.R`, lines 142-167)$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Core Mathematics — Verified Against R Source
+6. Bayesian GLM - Cauchy Prior (`lmWrapper-bayesglm.R`, `bayesglm.R`)	antigravity_docs/implementation_plan_v2_final.md	/^### 6. Bayesian GLM - Cauchy Prior (`lmWrapper-bayesglm.R`, `bayesglm.R`)$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Core Mathematics — Verified Against R Source
+API Reference	README.md	/^## API Reference$/;"	s	chapter:pyMAST
+API Usage	antigravity_docs/implementation_plan_v2_final.md	/^### API Usage$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Output Structure — Scanpy-Compatible (`adata.uns['mast']`)
+Added	CHANGELOG.md	/^### Added$/;"	S	section:Changelog""[Unreleased]
+Automated Tests	antigravity_docs/implementation_plan_v2_final.md	/^### Automated Tests$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Verification Plan
+Background	antigravity_docs/implementation_plan_v1_original.md	/^## Background$/;"	s	chapter:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)
+Background	antigravity_docs/implementation_plan_v2_final.md	/^## Background$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+BayesGLMLike	pymast/bayes_glm.py	/^class BayesGLMLike:$/;"	c
+BayesGLMResult	pymast/bayes_glm.py	/^class BayesGLMResult:$/;"	c
+Bayesian GLM Cauchy Prior	antigravity_docs/implementation_plan_v1_original.md	/^### Bayesian GLM Cauchy Prior$/;"	S	section:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)""Core Mathematics (same in v1 and v2 — devel branch refs updated to main in v2)
+BootZlmResult	pymast/bootstrap.py	/^class BootZlmResult:$/;"	c
+Bug Fixes: Runtime Warnings & CI Dependency Conflict	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^# Bug Fixes: Runtime Warnings & CI Dependency Conflict$/;"	c
+Changelog	CHANGELOG.md	/^# Changelog$/;"	c
+ChiSqTable	pymast/lm_wrapper.py	/^class ChiSqTable:$/;"	c
+Citation	README.md	/^## Citation$/;"	s	chapter:pyMAST
+CoefficientHypothesis	pymast/hypothesis.py	/^class CoefficientHypothesis:$/;"	c
+Compatibility Matrix	antigravity_docs/implementation_plan_v2_final.md	/^## Compatibility Matrix$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Core Mathematics (same in v1 and v2 — devel branch refs updated to main in v2)	antigravity_docs/implementation_plan_v1_original.md	/^## Core Mathematics (same in v1 and v2 — devel branch refs updated to main in v2)$/;"	s	chapter:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)
+Core Mathematics — Verified Against R Source	antigravity_docs/implementation_plan_v2_final.md	/^## Core Mathematics — Verified Against R Source$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Development	README.md	/^## Development$/;"	s	chapter:pyMAST
+Docker	README.md	/^### Docker$/;"	S	section:pyMAST""Installation
+Docker Verification	antigravity_docs/implementation_plan_v2_final.md	/^### Docker Verification$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Verification Plan
+EBayesResult	pymast/ebayes.py	/^class EBayesResult:$/;"	c
+Empirical Bayes (`ebayes-helpers.R` L6-27)	antigravity_docs/implementation_plan_v1_original.md	/^### Empirical Bayes (`ebayes-helpers.R` L6-27)$/;"	S	section:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)""Core Mathematics (same in v1 and v2 — devel branch refs updated to main in v2)
+Failure Summary Table	antigravity_docs/implementation_revisions.md	/^### Failure Summary Table$/;"	S	section:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 1 — Test Failure Fixes (Post-Implementation)
+Final Test Results	antigravity_docs/implementation_revisions.md	/^### Final Test Results$/;"	S	section:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 1 — Test Failure Fixes (Post-Implementation)
+Fix (`pyproject.toml`)	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Fix (`pyproject.toml`)$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 3 — GitHub Actions CI dependency conflict (`pyproject.toml`)
+Fix (`tl.py` lines 136-144)	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Fix (`tl.py` lines 136-144)$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 1 — `ImplicitModificationWarning` in `tl.py`
+Fix (`zlm_fit.py` lines 143-158)	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Fix (`zlm_fit.py` lines 143-158)$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 2 — `RuntimeWarning: invalid value encountered in subtract` in `zlm_fit.py`
+Fix 1 — `"BH"` → `"fdr_bh"` (R vs statsmodels naming)	antigravity_docs/implementation_revisions.md	/^#### Fix 1 — `"BH"` → `"fdr_bh"` (R vs statsmodels naming)$/;"	t	subsection:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 1 — Test Failure Fixes (Post-Implementation)""Fix Details
+Fix 1 — `ImplicitModificationWarning` in `tl.py`	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^## Fix 1 — `ImplicitModificationWarning` in `tl.py`$/;"	s	chapter:Bug Fixes: Runtime Warnings & CI Dependency Conflict
+Fix 2 — `RuntimeWarning: invalid value encountered in subtract` in `zlm_fit.py`	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^## Fix 2 — `RuntimeWarning: invalid value encountered in subtract` in `zlm_fit.py`$/;"	s	chapter:Bug Fixes: Runtime Warnings & CI Dependency Conflict
+Fix 2 — `patsy.dmatrices` → `patsy.dmatrix` (one-sided formula)	antigravity_docs/implementation_revisions.md	/^#### Fix 2 — `patsy.dmatrices` → `patsy.dmatrix` (one-sided formula)$/;"	t	subsection:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 1 — Test Failure Fixes (Post-Implementation)""Fix Details
+Fix 3 — GitHub Actions CI dependency conflict (`pyproject.toml`)	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^## Fix 3 — GitHub Actions CI dependency conflict (`pyproject.toml`)$/;"	s	chapter:Bug Fixes: Runtime Warnings & CI Dependency Conflict
+Fix 3 — Method Validation Order	antigravity_docs/implementation_revisions.md	/^#### Fix 3 — Method Validation Order$/;"	t	subsection:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 1 — Test Failure Fixes (Post-Implementation)""Fix Details
+Fix 4 — AnnData String Index Warning	antigravity_docs/implementation_revisions.md	/^#### Fix 4 — AnnData String Index Warning$/;"	t	subsection:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 1 — Test Failure Fixes (Post-Implementation)""Fix Details
+Fix Details	antigravity_docs/implementation_revisions.md	/^### Fix Details$/;"	S	section:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 1 — Test Failure Fixes (Post-Implementation)
+For development	README.md	/^### For development$/;"	S	section:pyMAST""Installation
+From GitHub (recommended for UV environments)	README.md	/^### From GitHub (recommended for UV environments)$/;"	S	section:pyMAST""Installation
+GLMLike	pymast/glm_wrapper.py	/^class GLMLike:$/;"	c
+GLMResult	pymast/glm_wrapper.py	/^class GLMResult:$/;"	c
+GSEAResult	pymast/gsea.py	/^class GSEAResult:$/;"	c
+GeneSufficientStats	pymast/ebayes.py	/^class GeneSufficientStats:$/;"	c
+Git Strategy	antigravity_docs/implementation_plan_v2_final.md	/^## Git Strategy$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Hurdle Model	antigravity_docs/implementation_plan_v1_original.md	/^### Hurdle Model$/;"	S	section:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)""Core Mathematics (same in v1 and v2 — devel branch refs updated to main in v2)
+Hypothesis	pymast/hypothesis.py	/^class Hypothesis:$/;"	c
+Installation	README.md	/^## Installation$/;"	s	chapter:pyMAST
+Key features	README.md	/^### Key features$/;"	S	section:pyMAST""Overview
+LMlike	pymast/lm_wrapper.py	/^class LMlike(ABC):$/;"	c
+LRT	pymast/lrtest.py	/^def LRT(  # noqa: N802$/;"	f	typeref:typename:pd.DataFrame
+LRT Full (`ZlmFit.R`)	antigravity_docs/implementation_plan_v1_original.md	/^### LRT Full (`ZlmFit.R`)$/;"	S	section:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)""Core Mathematics (same in v1 and v2 — devel branch refs updated to main in v2)
+LRT Simple (`lrtest.R` L5-50)	antigravity_docs/implementation_plan_v1_original.md	/^### LRT Simple (`lrtest.R` L5-50)$/;"	S	section:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)""Core Mathematics (same in v1 and v2 — devel branch refs updated to main in v2)
+License	README.md	/^## License$/;"	s	chapter:pyMAST
+MAST-Specific Extended Results	antigravity_docs/implementation_plan_v2_final.md	/^### MAST-Specific Extended Results$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Output Structure — Scanpy-Compatible (`adata.uns['mast']`)
+METHOD_DICT	pymast/zlm.py	/^    METHOD_DICT: dict[str, type] = {$/;"	v	class:ZlmFitter	typeref:typename:dict[str, type]
+Math Verification Strategy	antigravity_docs/implementation_plan_v2_final.md	/^### Math Verification Strategy$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Verification Plan
+Mathematical Foundation	README.md	/^## Mathematical Foundation$/;"	s	chapter:pyMAST
+Mathematical Foundation (Line-by-Line Verification Targets)	antigravity_docs/implementation_plan_v2_final.md	/^## Mathematical Foundation (Line-by-Line Verification Targets)$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+OLSLike	pymast/lm_wrapper.py	/^class OLSLike:$/;"	c
+OLSResult	pymast/lm_wrapper.py	/^class OLSResult:$/;"	c
+Open Questions	antigravity_docs/implementation_plan_v1_original.md	/^## Open Questions$/;"	s	chapter:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)
+Open Questions	antigravity_docs/implementation_plan_v2_final.md	/^## Open Questions$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Output Structure	README.md	/^## Output Structure$/;"	s	chapter:pyMAST
+Output Structure — Scanpy-Compatible (`adata.uns['mast']`)	antigravity_docs/implementation_plan_v2_final.md	/^## Output Structure — Scanpy-Compatible (`adata.uns['mast']`)$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Overview	README.md	/^## Overview$/;"	s	chapter:pyMAST
+Part 1 — Test Failure Fixes (Post-Implementation)	antigravity_docs/implementation_revisions.md	/^## Part 1 — Test Failure Fixes (Post-Implementation)$/;"	s	chapter:pyMAST — Implementation Revisions & Prompt-to-Output Traceability
+Part 2 — Prompt-to-Output Traceability Matrix	antigravity_docs/implementation_revisions.md	/^## Part 2 — Prompt-to-Output Traceability Matrix$/;"	s	chapter:pyMAST — Implementation Revisions & Prompt-to-Output Traceability
+Part 3 — Plan Version History	antigravity_docs/implementation_revisions.md	/^## Part 3 — Plan Version History$/;"	s	chapter:pyMAST — Implementation Revisions & Prompt-to-Output Traceability
+Part 4 — Known Gaps for v1.1	antigravity_docs/implementation_revisions.md	/^## Part 4 — Known Gaps for v1.1$/;"	s	chapter:pyMAST — Implementation Revisions & Prompt-to-Output Traceability
+Phase 0 — Repo Scaffold & Infrastructure	antigravity_docs/task.md	/^## Phase 0 — Repo Scaffold & Infrastructure$/;"	s	chapter:pyMAST Execution Task List
+Phase 1 — Core Package Skeleton	antigravity_docs/task.md	/^## Phase 1 — Core Package Skeleton$/;"	s	chapter:pyMAST Execution Task List
+Phase 2 — Statistical Core (Highest Fidelity)	antigravity_docs/task.md	/^## Phase 2 — Statistical Core (Highest Fidelity)$/;"	s	chapter:pyMAST Execution Task List
+Phase 3 — ZLM Fitting Engine	antigravity_docs/task.md	/^## Phase 3 — ZLM Fitting Engine$/;"	s	chapter:pyMAST Execution Task List
+Phase 4 — Bootstrap & GSEA	antigravity_docs/task.md	/^## Phase 4 — Bootstrap & GSEA$/;"	s	chapter:pyMAST Execution Task List
+Phase 5 — High-Level Scanpy-Compatible API	antigravity_docs/task.md	/^## Phase 5 — High-Level Scanpy-Compatible API$/;"	s	chapter:pyMAST Execution Task List
+Phase 6 — Test Suite	antigravity_docs/task.md	/^## Phase 6 — Test Suite$/;"	s	chapter:pyMAST Execution Task List
+Phase 7 — Examples & Documentation	antigravity_docs/task.md	/^## Phase 7 — Examples & Documentation$/;"	s	chapter:pyMAST Execution Task List
+Phase 8 — Docker, CI, Release	antigravity_docs/task.md	/^## Phase 8 — Docker, CI, Release$/;"	s	chapter:pyMAST Execution Task List
+Post-Implementation Bug Fixes (see `implementation_revisions.md`)	antigravity_docs/task.md	/^### Post-Implementation Bug Fixes (see `implementation_revisions.md`)$/;"	S	section:pyMAST Execution Task List""Phase 6 — Test Suite
+Prompt 1 — Original Project Request	antigravity_docs/implementation_revisions.md	/^### Prompt 1 — Original Project Request$/;"	S	section:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 2 — Prompt-to-Output Traceability Matrix
+Prompt 2 — GitHub Repo, UV, Docker	antigravity_docs/implementation_revisions.md	/^### Prompt 2 — GitHub Repo, UV, Docker$/;"	S	section:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 2 — Prompt-to-Output Traceability Matrix
+Prompt 3 — Modular, Commented Code	antigravity_docs/implementation_revisions.md	/^### Prompt 3 — Modular, Commented Code$/;"	S	section:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 2 — Prompt-to-Output Traceability Matrix
+Prompt 4 — Plan Feedback: Branch, API, References, Output Format	antigravity_docs/implementation_revisions.md	/^### Prompt 4 — Plan Feedback: Branch, API, References, Output Format$/;"	S	section:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 2 — Prompt-to-Output Traceability Matrix
+Prompt 5 — Run Tests	antigravity_docs/implementation_revisions.md	/^### Prompt 5 — Run Tests$/;"	S	section:pyMAST — Implementation Revisions & Prompt-to-Output Traceability""Part 2 — Prompt-to-Output Traceability Matrix
+Proposed Changes	antigravity_docs/implementation_plan_v2_final.md	/^## Proposed Changes$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Proposed Repository Structure	antigravity_docs/implementation_plan_v2_final.md	/^## Proposed Repository Structure$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Quick Start	README.md	/^## Quick Start$/;"	s	chapter:pyMAST
+R Source → Python Module Mapping	antigravity_docs/implementation_plan_v2_final.md	/^### R Source → Python Module Mapping$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Mathematical Foundation (Line-by-Line Verification Targets)
+R Source → Python Module Mapping (v1 — no References column)	antigravity_docs/implementation_plan_v1_original.md	/^## R Source → Python Module Mapping (v1 — no References column)$/;"	s	chapter:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)
+Repository Structure (v1)	antigravity_docs/implementation_plan_v1_original.md	/^## Repository Structure (v1)$/;"	s	chapter:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)
+Root Cause	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Root Cause$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 1 — `ImplicitModificationWarning` in `tl.py`
+Root Cause	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Root Cause$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 2 — `RuntimeWarning: invalid value encountered in subtract` in `zlm_fit.py`
+Root Cause	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Root Cause$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 3 — GitHub Actions CI dependency conflict (`pyproject.toml`)
+Symptom	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Symptom$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 1 — `ImplicitModificationWarning` in `tl.py`
+Symptom	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Symptom$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 2 — `RuntimeWarning: invalid value encountered in subtract` in `zlm_fit.py`
+Symptom	antigravity_docs/bugfix_warnings_and_ci_deps.md	/^### Symptom$/;"	S	section:Bug Fixes: Runtime Warnings & CI Dependency Conflict""Fix 3 — GitHub Actions CI dependency conflict (`pyproject.toml`)
+TestBurdenOfFiltering	tests/test_filter.py	/^class TestBurdenOfFiltering:$/;"	c
+TestComputeCdr	tests/test_utils.py	/^class TestComputeCdr:$/;"	c
+TestComputeEtFromCt	tests/test_utils.py	/^class TestComputeEtFromCt:$/;"	c
+TestEbayes	tests/test_ebayes.py	/^class TestEbayes:$/;"	c
+TestFreq	tests/test_utils.py	/^class TestFreq:$/;"	c
+TestFromAnndata	tests/test_readers.py	/^class TestFromAnndata:$/;"	c
+TestFromFlatDf	tests/test_readers.py	/^class TestFromFlatDf:$/;"	c
+TestFromMatrix	tests/test_readers.py	/^class TestFromMatrix:$/;"	c
+TestGetMarginalHyperlikelihood	tests/test_ebayes.py	/^class TestGetMarginalHyperlikelihood:$/;"	c
+TestGetSSgRNg	tests/test_ebayes.py	/^class TestGetSSgRNg:$/;"	c
+TestLRTVectorized	tests/test_lrtest.py	/^class TestLRTVectorized:$/;"	c
+TestLogProd	tests/test_lrtest.py	/^class TestLogProd:$/;"	c
+TestLrt	tests/test_lrtest.py	/^class TestLrt:$/;"	c
+TestLrtest	tests/test_lrtest.py	/^class TestLrtest:$/;"	c
+TestMastFilter	tests/test_filter.py	/^class TestMastFilter:$/;"	c
+TestSolveMom	tests/test_ebayes.py	/^class TestSolveMom:$/;"	c
+TestZlm	tests/test_zlm.py	/^class TestZlm:$/;"	c
+UV Environment Verification	antigravity_docs/implementation_plan_v2_final.md	/^### UV Environment Verification$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Verification Plan
+User Review Required	antigravity_docs/implementation_plan_v1_original.md	/^## User Review Required$/;"	s	chapter:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)
+User Review Required	antigravity_docs/implementation_plan_v2_final.md	/^## User Review Required$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Verification Plan	antigravity_docs/implementation_plan_v1_original.md	/^## Verification Plan$/;"	s	chapter:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)
+Verification Plan	antigravity_docs/implementation_plan_v2_final.md	/^## Verification Plan$/;"	s	chapter:pyMAST: Pure Python Implementation of the MAST R Package
+Wald Test (`LmWrapper.R` L142-167)	antigravity_docs/implementation_plan_v1_original.md	/^### Wald Test (`LmWrapper.R` L142-167)$/;"	S	section:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)""Core Mathematics (same in v1 and v2 — devel branch refs updated to main in v2)
+With pip	README.md	/^### With pip$/;"	S	section:pyMAST""Installation
+ZlmFit	pymast/zlm_fit.py	/^class ZlmFit:$/;"	c
+ZlmFitter	pymast/zlm.py	/^class ZlmFitter:$/;"	c
+[0.1.0] — TBD	CHANGELOG.md	/^## [0.1.0] — TBD$/;"	s	chapter:Changelog
+[NEW] .github/workflows/ci.yml	antigravity_docs/implementation_plan_v2_final.md	/^### [NEW] .github\/workflows\/ci.yml$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Proposed Changes
+[NEW] Dockerfile	antigravity_docs/implementation_plan_v2_final.md	/^### [NEW] Dockerfile$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Proposed Changes
+[NEW] pyproject.toml	antigravity_docs/implementation_plan_v2_final.md	/^### [NEW] pyproject.toml$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Proposed Changes
+[Unreleased]	CHANGELOG.md	/^## [Unreleased]$/;"	s	chapter:Changelog
+__all__	pymast/__init__.py	/^__all__ = [$/;"	v
+__author__	pymast/__init__.py	/^__author__ = "pyMAST Contributors"$/;"	v
+__doi__	pymast/__init__.py	/^__doi__ = "10.1186\/s13059-015-0844-5"  # MAST publication DOI$/;"	v
+__init__	pymast/bayes_glm.py	/^    def __init__($/;"	m	class:BayesGLMLike	typeref:typename:None
+__init__	pymast/glm_wrapper.py	/^    def __init__(self, max_iter: int = 100, tol: float = 1e-8) -> None:$/;"	m	class:GLMLike	typeref:typename:None
+__init__	pymast/hypothesis.py	/^    def __init__($/;"	m	class:Hypothesis	typeref:typename:None
+__init__	pymast/hypothesis.py	/^    def __init__(self, hypothesis: str) -> None:$/;"	m	class:CoefficientHypothesis	typeref:typename:None
+__init__	pymast/zlm.py	/^    def __init__(self, method: Literal["bayesglm", "glm"] = "bayesglm") -> None:$/;"	m	class:ZlmFitter	typeref:typename:None
+__license__	pymast/__init__.py	/^__license__ = "MIT"$/;"	v
+__repr__	pymast/hypothesis.py	/^    def __repr__(self) -> str:$/;"	m	class:CoefficientHypothesis	typeref:typename:str
+__repr__	pymast/hypothesis.py	/^    def __repr__(self) -> str:$/;"	m	class:Hypothesis	typeref:typename:str
+__version__	pymast/__init__.py	/^__version__ = "0.1.0"$/;"	v
+_enrichment_score	pymast/gsea.py	/^def _enrichment_score(stat: np.ndarray, in_set: np.ndarray) -> float:$/;"	f	typeref:typename:float
+_fit_one_gene	pymast/zlm.py	/^def _fit_one_gene($/;"	f	typeref:typename:dict
+_marginal_hyperlikelihood_gradient	pymast/ebayes.py	/^def _marginal_hyperlikelihood_gradient($/;"	f	typeref:typename:tuple[float,float]
+`adata.uns['mast']` (MAST-specific)	README.md	/^### `adata.uns['mast']` (MAST-specific)$/;"	S	section:pyMAST""Output Structure
+`adata.uns['rank_genes_groups']` (Scanpy-compatible)	README.md	/^### `adata.uns['rank_genes_groups']` (Scanpy-compatible)$/;"	S	section:pyMAST""Output Structure
+`adata.uns['rank_genes_groups']` Structure	antigravity_docs/implementation_plan_v2_final.md	/^### `adata.uns['rank_genes_groups']` Structure$/;"	S	section:pyMAST: Pure Python Implementation of the MAST R Package""Output Structure — Scanpy-Compatible (`adata.uns['mast']`)
+`pymast.tl.rank_genes_groups()`	README.md	/^### `pymast.tl.rank_genes_groups()`$/;"	S	section:pyMAST""API Reference
+`pymast.tl.zlm()`	README.md	/^### `pymast.tl.zlm()`$/;"	S	section:pyMAST""API Reference
+boot_zlm	pymast/bootstrap.py	/^def boot_zlm($/;"	f	typeref:typename:BootZlmResult
+build_contrast	pymast/hypothesis.py	/^    def build_contrast(self, coef_names: list[str]) -> np.ndarray:$/;"	m	class:CoefficientHypothesis	typeref:typename:np.ndarray
+burden_of_filtering	pymast/filter.py	/^def burden_of_filtering($/;"	f	typeref:typename:pd.DataFrame
+collect_summaries	pymast/zlm_fit.py	/^    def collect_summaries(self) -> pd.DataFrame:$/;"	m	class:ZlmFit	typeref:typename:pd.DataFrame
+compute_cdr	pymast/utils.py	/^def compute_cdr($/;"	f	typeref:typename:np.ndarray|None
+compute_et_from_ct	pymast/utils.py	/^def compute_et_from_ct($/;"	f	typeref:typename:np.ndarray|pd.DataFrame
+discrete_fitter	pymast/zlm.py	/^    def discrete_fitter(self):$/;"	m	class:ZlmFitter
+ebayes	pymast/ebayes.py	/^def ebayes($/;"	f	typeref:typename:EBayesResult
+family	pymast/lm_wrapper.py	/^    def family(self) -> str:$/;"	m	class:LMlike	typeref:typename:str
+filter_to_highly_variable	pymast/anndata_utils.py	/^def filter_to_highly_variable(adata: AnnData) -> AnnData:$/;"	f	typeref:typename:AnnData
+fit	pymast/bayes_glm.py	/^    def fit($/;"	m	class:BayesGLMLike	typeref:typename:BayesGLMResult
+fit	pymast/glm_wrapper.py	/^    def fit($/;"	m	class:GLMLike	typeref:typename:GLMResult
+fit	pymast/lm_wrapper.py	/^    def fit($/;"	m	class:LMlike
+fit	pymast/lm_wrapper.py	/^    def fit($/;"	m	class:OLSLike	typeref:typename:OLSResult
+formula	pymast/zlm_fit.py	/^    formula: str = ""$/;"	v	class:ZlmFit	typeref:typename:str
+freq	pymast/utils.py	/^def freq(adata: AnnData, layer: str | None = None) -> pd.DataFrame:$/;"	f	typeref:typename:pd.DataFrame
+from_anndata	pymast/readers.py	/^def from_anndata($/;"	f	typeref:typename:AnnData
+from_coefficient	pymast/hypothesis.py	/^    def from_coefficient(cls, hypothesis_str: str, coef_names: list[str]) -> Hypothesis:$/;"	m	class:Hypothesis	typeref:typename:Hypothesis
+from_flat_df	pymast/readers.py	/^def from_flat_df($/;"	f	typeref:typename:AnnData
+from_matrix	pymast/readers.py	/^def from_matrix($/;"	f	typeref:typename:AnnData
+get_cell_names	pymast/anndata_utils.py	/^def get_cell_names(adata: AnnData) -> list[str]:$/;"	f	typeref:typename:list[str]
+get_expression_matrix	pymast/anndata_utils.py	/^def get_expression_matrix($/;"	f	typeref:typename:np.ndarray
+get_gene_names	pymast/anndata_utils.py	/^def get_gene_names(adata: AnnData) -> list[str]:$/;"	f	typeref:typename:list[str]
+get_log_fc	pymast/log_fc.py	/^def get_log_fc($/;"	f	typeref:typename:pd.DataFrame
+get_log_fc	pymast/zlm_fit.py	/^    def get_log_fc(self, contrast: np.ndarray) -> pd.DataFrame:$/;"	m	class:ZlmFit	typeref:typename:pd.DataFrame
+get_marginal_hyperlikelihood	pymast/ebayes.py	/^def get_marginal_hyperlikelihood($/;"	f	typeref:typename:float
+get_obs_column	pymast/anndata_utils.py	/^def get_obs_column(adata: AnnData, column: str) -> pd.Series:$/;"	f	typeref:typename:pd.Series
+get_ss_g_r_ng	pymast/ebayes.py	/^def get_ss_g_r_ng($/;"	f	typeref:typename:GeneSufficientStats
+gsea_after_boot	pymast/gsea.py	/^def gsea_after_boot($/;"	f	typeref:typename:pd.DataFrame
+log_prod	pymast/lrtest.py	/^def log_prod(n: float, ratio: float) -> float:$/;"	f	typeref:typename:float
+lr_test	pymast/zlm_fit.py	/^    def lr_test($/;"	m	class:ZlmFit	typeref:typename:pd.DataFrame
+lrt	pymast/lrtest.py	/^def lrt($/;"	f	typeref:typename:tuple[float,float]
+lrtest	pymast/lrtest.py	/^def lrtest($/;"	f	typeref:typename:pd.DataFrame
+make_chisq_table	pymast/lm_wrapper.py	/^def make_chisq_table($/;"	f	typeref:typename:ChiSqTable
+mast_filter	pymast/filter.py	/^def mast_filter($/;"	f	typeref:typename:AnnData|None
+matched_names	pymast/hypothesis.py	/^    def matched_names(self) -> list[str]:$/;"	m	class:CoefficientHypothesis	typeref:typename:list[str]
+n_coefs	pymast/hypothesis.py	/^    def n_coefs(self) -> int:$/;"	m	class:Hypothesis	typeref:typename:int
+n_genes	pymast/zlm_fit.py	/^    def n_genes(self) -> int:$/;"	m	class:ZlmFit	typeref:typename:int
+n_hypotheses	pymast/hypothesis.py	/^    def n_hypotheses(self) -> int:$/;"	m	class:Hypothesis	typeref:typename:int
+n_params	pymast/zlm_fit.py	/^    def n_params(self) -> int:$/;"	m	class:ZlmFit	typeref:typename:int
+neg_grad	pymast/ebayes.py	/^    def neg_grad(params: np.ndarray) -> np.ndarray:$/;"	f	function:ebayes	typeref:typename:np.ndarray	file:
+neg_ll	pymast/ebayes.py	/^    def neg_ll(params: np.ndarray) -> float:$/;"	f	function:ebayes	typeref:typename:float	file:
+np	pymast/anndata_utils.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/bayes_glm.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/bootstrap.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/ebayes.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/filter.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/glm_wrapper.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/gsea.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/hypothesis.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/lm_wrapper.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/log_fc.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/lrtest.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/readers.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/tl.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/utils.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/zlm.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	pymast/zlm_fit.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	tests/conftest.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	tests/test_ebayes.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	tests/test_filter.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	tests/test_lrtest.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	tests/test_readers.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	tests/test_utils.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	tests/test_zlm.py	/^import numpy as np$/;"	I	nameref:module:numpy
+pd	pymast/anndata_utils.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	pymast/filter.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	pymast/gsea.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	pymast/log_fc.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	pymast/lrtest.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	pymast/readers.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	pymast/tl.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	pymast/utils.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	pymast/zlm_fit.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	tests/conftest.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	tests/test_readers.py	/^        import pandas as pd$/;"	I	member:TestFromFlatDf.test_ct_to_et_conversion	file:	nameref:module:pandas
+pyMAST	README.md	/^# pyMAST$/;"	c
+pyMAST Execution Task List	antigravity_docs/task.md	/^# pyMAST Execution Task List$/;"	c
+pyMAST — Implementation Revisions & Prompt-to-Output Traceability	antigravity_docs/implementation_revisions.md	/^# pyMAST — Implementation Revisions & Prompt-to-Output Traceability$/;"	c
+pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)	antigravity_docs/implementation_plan_v1_original.md	/^# pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)$/;"	c
+pyMAST: Pure Python Implementation of the MAST R Package	antigravity_docs/implementation_plan_v2_final.md	/^# pyMAST: Pure Python Implementation of the MAST R Package$/;"	c
+pyproject.toml (same v1 and v2)	antigravity_docs/implementation_plan_v1_original.md	/^## pyproject.toml (same v1 and v2)$/;"	s	chapter:pyMAST: Implementation Plan v1.0.0 — ORIGINAL (Pre-Review)
+pytest cache directory	.pytest_cache/README.md	/^# pytest cache directory #$/;"	c
+rank_genes_groups	pymast/tl.py	/^def rank_genes_groups($/;"	f	typeref:typename:AnnData|None
+rng	tests/conftest.py	/^def rng() -> np.random.Generator:$/;"	f	typeref:typename:np.random.Generator
+rotate_model_matrix	pymast/lm_wrapper.py	/^def rotate_model_matrix($/;"	f	typeref:typename:tuple[np.ndarray,np.ndarray]
+sm	pymast/glm_wrapper.py	/^import statsmodels.api as sm$/;"	I	nameref:module:statsmodels.api
+small_adata	tests/conftest.py	/^def small_adata(rng: np.random.Generator) -> AnnData:$/;"	f	typeref:typename:AnnData
+solve_mom	pymast/ebayes.py	/^def solve_mom(ss_g: np.ndarray, r_ng: np.ndarray) -> tuple[float, float]:$/;"	f	typeref:typename:tuple[float,float]
+sp	pymast/anndata_utils.py	/^import scipy.sparse as sp$/;"	I	nameref:module:scipy.sparse
+synthetic_adata	tests/conftest.py	/^def synthetic_adata(rng: np.random.Generator) -> AnnData:$/;"	f	typeref:typename:AnnData
+synthetic_stats	tests/test_ebayes.py	/^def synthetic_stats(rng) -> GeneSufficientStats:$/;"	f	typeref:typename:GeneSufficientStats
+test_cdr_range	tests/test_utils.py	/^    def test_cdr_range(self, synthetic_adata) -> None:$/;"	m	class:TestComputeCdr	typeref:typename:None
+test_cell_filter	tests/test_filter.py	/^    def test_cell_filter(self, synthetic_adata) -> None:$/;"	m	class:TestMastFilter	typeref:typename:None
+test_clipping_at_zero	tests/test_utils.py	/^    def test_clipping_at_zero(self) -> None:$/;"	m	class:TestComputeEtFromCt	typeref:typename:None
+test_coef_shapes	tests/test_zlm.py	/^    def test_coef_shapes(self, small_adata) -> None:$/;"	m	class:TestZlm	typeref:typename:None
+test_conversion	tests/test_utils.py	/^    def test_conversion(self) -> None:$/;"	m	class:TestComputeEtFromCt	typeref:typename:None
+test_creates_anndata	tests/test_readers.py	/^    def test_creates_anndata(self, rng) -> None:$/;"	m	class:TestFromMatrix	typeref:typename:None
+test_ct_to_et_conversion	tests/test_readers.py	/^    def test_ct_to_et_conversion(self, rng) -> None:$/;"	m	class:TestFromFlatDf	typeref:typename:None
+test_de_genes_have_lower_pvalues	tests/test_lrtest.py	/^    def test_de_genes_have_lower_pvalues(self, synthetic_adata) -> None:$/;"	m	class:TestLRTVectorized	typeref:typename:None
+test_df_total_is_prior_plus_residual	tests/test_ebayes.py	/^    def test_df_total_is_prior_plus_residual(self, synthetic_stats) -> None:$/;"	m	class:TestEbayes	typeref:typename:None
+test_different_detection_rates	tests/test_lrtest.py	/^    def test_different_detection_rates(self) -> None:$/;"	m	class:TestLrt	typeref:typename:None
+test_fallback_for_single_gene	tests/test_ebayes.py	/^    def test_fallback_for_single_gene(self) -> None:$/;"	m	class:TestSolveMom	typeref:typename:None
+test_fallback_for_zero_r_ng	tests/test_ebayes.py	/^    def test_fallback_for_zero_r_ng(self) -> None:$/;"	m	class:TestSolveMom	typeref:typename:None
+test_fractional_ratio	tests/test_lrtest.py	/^    def test_fractional_ratio(self) -> None:$/;"	m	class:TestLogProd	typeref:typename:None
+test_gene_filter	tests/test_filter.py	/^    def test_gene_filter(self, synthetic_adata) -> None:$/;"	m	class:TestMastFilter	typeref:typename:None
+test_gene_names_as_index	tests/test_lrtest.py	/^    def test_gene_names_as_index(self, synthetic_adata) -> None:$/;"	m	class:TestLrtest	typeref:typename:None
+test_gene_names_match	tests/test_zlm.py	/^    def test_gene_names_match(self, small_adata) -> None:$/;"	m	class:TestZlm	typeref:typename:None
+test_higher_b0_lower_ll_for_small_ss	tests/test_ebayes.py	/^    def test_higher_b0_lower_ll_for_small_ss(self) -> None:$/;"	m	class:TestGetMarginalHyperlikelihood	typeref:typename:None
+test_hyperparameters_are_positive	tests/test_ebayes.py	/^    def test_hyperparameters_are_positive(self, synthetic_stats) -> None:$/;"	m	class:TestEbayes	typeref:typename:None
+test_identical_groups_zero_statistic	tests/test_lrtest.py	/^    def test_identical_groups_zero_statistic(self) -> None:$/;"	m	class:TestLrt	typeref:typename:None
+test_identity	tests/test_lrtest.py	/^    def test_identity(self) -> None:$/;"	m	class:TestLogProd	typeref:typename:None
+test_inplace_adds_column	tests/test_utils.py	/^    def test_inplace_adds_column(self, synthetic_adata) -> None:$/;"	m	class:TestComputeCdr	typeref:typename:None
+test_invalid_formula_raises	tests/test_zlm.py	/^    def test_invalid_formula_raises(self, small_adata) -> None:$/;"	m	class:TestZlm	typeref:typename:None
+test_invalid_method_raises	tests/test_zlm.py	/^    def test_invalid_method_raises(self, small_adata) -> None:$/;"	m	class:TestZlm	typeref:typename:None
+test_known_lrt_value	tests/test_lrtest.py	/^    def test_known_lrt_value(self) -> None:$/;"	m	class:TestLrt	typeref:typename:None
+test_known_value	tests/test_lrtest.py	/^    def test_known_value(self) -> None:$/;"	m	class:TestLogProd	typeref:typename:None
+test_lr_test_runs	tests/test_zlm.py	/^    def test_lr_test_runs(self, small_adata) -> None:$/;"	m	class:TestZlm	typeref:typename:None
+test_monotone_decreasing_genes	tests/test_filter.py	/^    def test_monotone_decreasing_genes(self, synthetic_adata) -> None:$/;"	m	class:TestBurdenOfFiltering	typeref:typename:None
+test_no_filter_returns_same	tests/test_filter.py	/^    def test_no_filter_returns_same(self, synthetic_adata) -> None:$/;"	m	class:TestMastFilter	typeref:typename:None
+test_output_shape	tests/test_ebayes.py	/^    def test_output_shape(self, rng) -> None:$/;"	m	class:TestGetSSgRNg	typeref:typename:None
+test_output_shape	tests/test_lrtest.py	/^    def test_output_shape(self, synthetic_adata) -> None:$/;"	m	class:TestLRTVectorized	typeref:typename:None
+test_p_adj_leq_1	tests/test_lrtest.py	/^    def test_p_adj_leq_1(self, synthetic_adata) -> None:$/;"	m	class:TestLrtest	typeref:typename:None
+test_p_values_in_range	tests/test_lrtest.py	/^    def test_p_values_in_range(self, synthetic_adata) -> None:$/;"	m	class:TestLRTVectorized	typeref:typename:None
+test_p_values_in_range	tests/test_zlm.py	/^    def test_p_values_in_range(self, small_adata) -> None:$/;"	m	class:TestZlm	typeref:typename:None
+test_posterior_variance_shrinkage	tests/test_ebayes.py	/^    def test_posterior_variance_shrinkage(self, synthetic_stats) -> None:$/;"	m	class:TestEbayes	typeref:typename:None
+test_requires_two_groups	tests/test_lrtest.py	/^    def test_requires_two_groups(self, synthetic_adata) -> None:$/;"	m	class:TestLRTVectorized	typeref:typename:None
+test_returns_dataframe	tests/test_filter.py	/^    def test_returns_dataframe(self, synthetic_adata) -> None:$/;"	m	class:TestBurdenOfFiltering	typeref:typename:None
+test_returns_dataframe	tests/test_utils.py	/^    def test_returns_dataframe(self, synthetic_adata) -> None:$/;"	m	class:TestFreq	typeref:typename:None
+test_returns_dataframe_with_expected_columns	tests/test_lrtest.py	/^    def test_returns_dataframe_with_expected_columns(self, synthetic_adata) -> None:$/;"	m	class:TestLrtest	typeref:typename:None
+test_returns_finite_for_valid_inputs	tests/test_ebayes.py	/^    def test_returns_finite_for_valid_inputs(self, synthetic_stats) -> None:$/;"	m	class:TestGetMarginalHyperlikelihood	typeref:typename:None
+test_returns_positive_values	tests/test_ebayes.py	/^    def test_returns_positive_values(self, synthetic_stats) -> None:$/;"	m	class:TestSolveMom	typeref:typename:None
+test_returns_result_with_correct_shape	tests/test_ebayes.py	/^    def test_returns_result_with_correct_shape(self, synthetic_stats) -> None:$/;"	m	class:TestEbayes	typeref:typename:None
+test_returns_zero_for_all_zero_r_ng	tests/test_ebayes.py	/^    def test_returns_zero_for_all_zero_r_ng(self) -> None:$/;"	m	class:TestGetMarginalHyperlikelihood	typeref:typename:None
+test_returns_zlmfit	tests/test_zlm.py	/^    def test_returns_zlmfit(self, small_adata) -> None:$/;"	m	class:TestZlm	typeref:typename:None
+test_ss_g_is_sum_of_squares	tests/test_ebayes.py	/^    def test_ss_g_is_sum_of_squares(self, rng) -> None:$/;"	m	class:TestGetSSgRNg	typeref:typename:None
+test_v_equals_b0_over_a0	tests/test_ebayes.py	/^    def test_v_equals_b0_over_a0(self, synthetic_stats) -> None:$/;"	m	class:TestEbayes	typeref:typename:None
+test_validates_and_adds_cdr	tests/test_readers.py	/^    def test_validates_and_adds_cdr(self, synthetic_adata) -> None:$/;"	m	class:TestFromAnndata	typeref:typename:None
+test_with_ebayes	tests/test_zlm.py	/^    def test_with_ebayes(self, small_adata) -> None:$/;"	m	class:TestZlm	typeref:typename:None
+test_zero_expressing_continuous	tests/test_lrtest.py	/^    def test_zero_expressing_continuous(self) -> None:$/;"	m	class:TestLrt	typeref:typename:None
+test_zero_n_returns_zero	tests/test_lrtest.py	/^    def test_zero_n_returns_zero(self) -> None:$/;"	m	class:TestLogProd	typeref:typename:None
+threshold_scRNA	pymast/utils.py	/^def threshold_scRNA($/;"	f	typeref:typename:np.ndarray
+validate_anndata	pymast/anndata_utils.py	/^def validate_anndata(adata: AnnData) -> None:$/;"	f	typeref:typename:None
+wald_test	pymast/lm_wrapper.py	/^def wald_test($/;"	f	typeref:typename:tuple[float,int,float]
+wald_test	pymast/zlm_fit.py	/^    def wald_test($/;"	m	class:ZlmFit	typeref:typename:pd.DataFrame
+zlm	pymast/zlm.py	/^def zlm($/;"	f	typeref:typename:ZlmFit

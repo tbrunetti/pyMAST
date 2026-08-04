@@ -18,7 +18,6 @@ import re
 
 import numpy as np
 
-
 # ---------------------------------------------------------------------------
 # CoefficientHypothesis
 # R: Hypothesis.R — CoefficientHypothesis S4 class
@@ -168,7 +167,7 @@ class Hypothesis:
         return self.contrast_matrix.shape[0]
 
     @classmethod
-    def from_coefficient(cls, hypothesis_str: str, coef_names: list[str]) -> "Hypothesis":
+    def from_coefficient(cls, hypothesis_str: str, coef_names: list[str]) -> Hypothesis:
         """Construct a Hypothesis from a :class:`CoefficientHypothesis` string.
 
         Convenience factory that wraps ``CoefficientHypothesis.build_contrast()``.

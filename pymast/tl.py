@@ -39,7 +39,6 @@ from .anndata_utils import (
 from .utils import compute_cdr
 from .zlm import zlm
 
-
 # ---------------------------------------------------------------------------
 # rank_genes_groups — Scanpy-compatible MAST differential expression
 # ---------------------------------------------------------------------------
@@ -133,8 +132,15 @@ def rank_genes_groups(
     else:
         test_groups = [str(g) for g in groups]
 
-    # Restrict to HVGs if requested
-    adata_test = filter_to_highly_variable(adata) if use_highly_variable else adata
+    # Restrict to HVGs if requested.
+    # Always materialise as a copy so that writing to adata_test.obs never
+    # triggers AnnData's ImplicitModificationWarning (which fires when you
+    # assign to a column of a *view* rather than a real AnnData object).
+    adata_test = (
+        filter_to_highly_variable(adata).copy()
+        if use_highly_variable
+        else adata.copy()
+    )
     gene_names = list(adata_test.var_names)
     n_genes = len(gene_names)
 
@@ -159,7 +165,6 @@ def rank_genes_groups(
         # Build reference mask
         group_labels = adata_test.obs[groupby].astype(str)
         if reference == "rest":
-            test_mask = (group_labels == group_str) | (group_labels != group_str)
             # Create binary group column
             adata_test.obs["_pymast_group"] = (group_labels == group_str).astype(int)
         else:
@@ -175,7 +180,6 @@ def rank_genes_groups(
             adata_sub.obs["_pymast_group"] = (
                 adata_sub.obs[groupby].astype(str) == group_str
             ).astype(int)
-            adata_test_use = adata_sub
             adata_test.obs["_pymast_group"] = (group_labels == group_str).astype(int)
 
         # Build formula
